@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Pranitha Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #333;
+            --bg: #f4f4f4;
+            --white: #fff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background: var(--bg);
+        }
+
+        nav {
+            background: var(--secondary);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        #home {
+            text-align: center;
+            padding: 60px;
+            background: var(--primary);
+            color: white;
+        }
+
+        #home img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        h2 {
+            color: var(--secondary);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            background: var(--primary);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        form button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+    <img src="https://via.placeholder.com/150" alt="Profile Photo">
+    <h1>M.Pranitha</h1>
+    <p>B.Tech IT (3rd Year)</p>
+    <p>Anil Neerukonda Institute Of Technology And Science</p>
+    <p><em>Aspiring Web Developer passionate about building responsive websites</em></p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p><strong>I'm M.Pranitha</strong>, currently pursuing my <em>B.Tech in Information Technology</em>.</p>
+    
+    <p>I am interested in <strong>web development</strong> and recently developed a <em>single page portfolio website</em> using HTML and CSS, which includes sections like Home, About, Skills, and Contact with smooth navigation and responsive design.</p>
+    
+    <p>This project helped me improve my <u>front-end development and design skills</u>. I am a quick learner, motivated to explore new technologies, and aim to build a successful career in the IT field.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <h3>Technical Skills</h3>
+    <div class="skills">
+        <span class="badge">Python</span>
+        <span class="badge">Java</span>
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+    </div>
+
+    <h3>Soft Skills</h3>
+    <div class="skills">
+        <span class="badge">Communication</span>
+        <span class="badge">Teamwork</span>
+        <span class="badge">Time Management</span>
+        <span class="badge">Problem Solving</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+        <div class="card">
+            <h3>Single Page Portfolio</h3>
+            <p>A responsive portfolio website built using HTML and CSS with smooth navigation.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Student Project (Upcoming)</h3>
+            <p>More projects will be added as I continue learning and building.</p>
+            <a href="#">Coming Soon</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone</label>
+        <input type="tel">
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 M.Pranitha</p>
+    <address>
+        Email: modhapranitha.24.it@anits.edu.in <br>
+        Follow me:
+        <a href="#" style="color:white;">LinkedIn</a> |
+        <a href="#" style="color:white;">GitHub</a>
+    </address>
+</footer>
+
+</body>
+</html>

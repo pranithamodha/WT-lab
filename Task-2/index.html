@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Profile</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .skill-badge {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ✅ Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Student Profile</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ✅ Profile Card -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card text-center shadow p-3">
+                <img src="https://via.placeholder.com/150" class="profile-img mx-auto" alt="photo">
+
+                <div class="card-body">
+                    <h4>M. Pranitha</h4>
+                    <p>
+                        <strong>Roll No:</strong> A24126511154 <br>
+                        <strong>Branch:</strong> Information Technology <br>
+                        <strong>Email:</strong> modhapranitha.24.it@anits.edu.in
+                    </p>
+
+                    <button class="btn btn-primary" onclick="showAlert()">View Profile</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ✅ About Section -->
+<div class="container my-5" id="about">
+    <h3 class="text-center mb-4">About Me</h3>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <p>
+                I'm M. Pranitha, a passionate B.Tech (Information Technology) student with a strong interest in web development and problem-solving. 
+                I enjoy creating clean, responsive, and user-friendly websites, and I have worked on projects like a personal portfolio that helped 
+                me strengthen my design and coding skills. I am always curious to learn new technologies and continuously improve my knowledge in 
+                programming and software development.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Skills Section -->
+<div class="container my-5">
+    <h3 class="text-center mb-4">Skills</h3>
+
+    <div class="text-center">
+        <span class="badge bg-primary skill-badge">HTML</span>
+        <span class="badge bg-success skill-badge">CSS</span>
+        <span class="badge bg-warning text-dark skill-badge">Python</span>
+        <span class="badge bg-info text-dark skill-badge">Bootstrap</span>
+    </div>
+</div>
+
+<!-- ✅ Academic Table -->
+<div class="container my-5">
+    <h3 class="text-center mb-4">Academic Details</h3>
+
+    <div class="table-responsive">
+        <table class="table table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Subject</th>
+                    <th>Internal</th>
+                    <th>External</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr><td>Web Technologies</td><td>25</td><td>65</td><td>90</td></tr>
+                <tr><td>Data Structures</td><td>23</td><td>62</td><td>85</td></tr>
+                <tr><td>Database Systems</td><td>24</td><td>64</td><td>88</td></tr>
+                <tr><td>Operating Systems</td><td>22</td><td>60</td><td>82</td></tr>
+                <tr><td>Computer Networks</td><td>26</td><td>66</td><td>92</td></tr>
+            </tbody>
+        </table>
+
+        <h5 class="text-end mt-3">GPA: <strong>8.7</strong></h5>
+    </div>
+</div>
+
+<!-- ✅ Contact Section -->
+<div class="container my-5" id="contact">
+    <h3 class="text-center mb-4">Contact</h3>
+
+    <div class="text-center">
+        <p>Email: modhapranitha.24.it@anits.edu.in</p>
+    </div>
+</div>
+
+<!-- ✅ Footer -->
+<footer class="bg-dark text-white text-center p-3">
+    <p>© 2026 Anil Neerukonda Institute of Technology and Science</p>
+</footer>
+
+<!-- ✅ JS -->
+<script>
+function showAlert() {
+    alert("Welcome to Pranitha's Profile!");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

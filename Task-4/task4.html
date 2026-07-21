@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. Pranitha Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #00adb5;
+  --dark: #222831;
+  --light: #eeeeee;
+  --accent: #393e46;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: var(--accent);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* HOME */
+#home {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#home img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 3px solid var(--primary);
+}
+
+/* SECTION */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* SKILLS */
+.skill {
+  margin: 15px auto;
+  width: 80%;
+  text-align: left;
+}
+
+.bar {
+  background: #555;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.fill {
+  height: 8px;
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--accent);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: var(--primary);
+}
+
+/* CONTACT */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--primary);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  text-align: left;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--accent);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>M. Pranitha</h2>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <h1>M. Pranitha 👋</h1>
+  <p>Aspiring Web Developer passionate about building responsive websites</p>
+  <img src="https://via.placeholder.com/150" alt="Profile">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm M. Pranitha, a B.Tech IT student at ANITS with a strong interest in web development and problem-solving.
+    I enjoy creating modern, responsive websites and continuously improving my technical skills.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill">HTML
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">CSS
+    <div class="bar"><div class="fill" style="width:85%"></div></div>
+  </div>
+
+  <div class="skill">JavaScript
+    <div class="bar"><div class="fill" style="width:75%"></div></div>
+  </div>
+
+  <div class="skill">Python
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">Java
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+  </div>
+
+  <div class="skill">Bootstrap
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal portfolio built using HTML & CSS.</p>
+    </div>
+
+    <div class="card">
+      <h3>Student Profile Page</h3>
+      <p>Created using Bootstrap with cards and tables.</p>
+    </div>
+
+    <div class="card">
+      <h3>E-Commerce Store</h3>
+      <p>Basic online store UI with product listings and cart design.</p>
+    </div>
+  </div>
+</section>
+
+---
+
+# ✉️ Contact Section with Validation
+
+::contentReference[oaicite:1]{index=1}
+
+
+```html
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="form">
+    <input type="text" id="name" placeholder="Your Name">
+    <div class="error" id="nameError"></div>
+
+    <input type="email" id="email" placeholder="Your Email">
+    <div class="error" id="emailError"></div>
+
+    <input type="text" id="subject" placeholder="Subject">
+    <div class="error" id="subjectError"></div>
+
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <div class="error" id="messageError"></div>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p>Email: modhapranitha.24.it@anits.edu.in</p>
+  <p>Phone: 9876543210</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 M. Pranitha | All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById("form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let subject = document.getElementById("subject").value.trim();
+  let message = document.getElementById("message").value.trim();
+
+  let valid = true;
+
+  if(name === ""){
+    nameError.innerText = "Name cannot be empty";
+    valid = false;
+  } else nameError.innerText = "";
+
+  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if(!email.match(pattern)){
+    emailError.innerText = "Invalid email";
+    valid = false;
+  } else emailError.innerText = "";
+
+  if(subject.length < 5){
+    subjectError.innerText = "Minimum 5 characters required";
+    valid = false;
+  } else subjectError.innerText = "";
+
+  if(message.length < 20){
+    messageError.innerText = "Minimum 20 characters required";
+    valid = false;
+  } else messageError.innerText = "";
+
+  if(valid){
+    alert("✅ Message Sent Successfully!");
+    document.getElementById("form").reset();
+  }
+});
+</script>
+
+</body>
+</html>
